@@ -4,8 +4,13 @@ node_modules
 # logs
 npm-debug.log
 
+# Lock
+package-lock.json
+
 # Nuxt generate
 dist
 
 
 .idea
+
+.nuxt
