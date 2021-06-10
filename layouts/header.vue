@@ -29,7 +29,7 @@
     data() {
       return {
         ifShow: false,
-        isLogin: 1,
+        isLogin: 1
       }
     }
   }
