@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="header">
+    <div v-if="ifShow" class="header">
       <router-link to="/" class="header-logo">
         <img src="~assets/images/logo.png"/>
         <span>技术专栏</span>
@@ -28,6 +28,7 @@
   export default {
     data() {
       return {
+        ifShow: false,
         isLogin: 1
       }
     }
@@ -37,11 +38,13 @@
   .header-search
     position relative
     margin-right 20px
+
     .header-search-input
       height 2.5rem
       width 15rem
       border-radius 3px
       padding-left 1rem
+
     .search-logo
       display block
       height 1.5rem
@@ -62,6 +65,7 @@
 
   .header-logos
     margin 0 20px
+
     img
       height 3rem
       width 3rem
@@ -76,6 +80,7 @@
     align-items center
     justify-content space-between
     font-size 14px
+
     .header-logo
       cursor pointer
       margin-left 50px
@@ -83,19 +88,24 @@
       justify-content center
       align-items center
       height 100%
+
       img
         width 170px
+
       span
         color #fff
         width 6em
+
     .header-user
       cursor pointer
       min-width 10em
       display flex
       justify-content center
       align-items center
+
       a
         color: #fff
+
       .header-l
         margin 0 1em
 
